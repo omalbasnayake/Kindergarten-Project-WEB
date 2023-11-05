@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NENASA</title>
+
+<!--
+     +--------------------------------------+
+     +                                      +
+     +              meta-data               +
+     +                                      +
+     +--------------------------------------+
+-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!--
+     +--------------------------------------+
+     +                                      +
+     +                css                   +
+     +                                      +
+     +--------------------------------------+
+-->
+    <!---------bootstrap---------->
+    <link rel="stylesheet" href="assests/css/bootstrap/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="assests/images/logo/logo.png">
+
+    <!--------animate.css--------->
+    <link rel="stylesheet" href="assests/css/animatecss/animeta.css">
+
+    <!--------google-font--------->
+    <!--forum--><!--font-family: 'Forum', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
+    <!--poiret one--><!--font-family: 'Forum', cursive;font-family: 'Poiret One', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Forum|Poiret+One&display=swap" rel="stylesheet">
+    <!--ubuntu--><!--font-family: 'Ubuntu', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--------common-css---------->
+    <link rel="stylesheet" href="assests/css/common/common.css">
+
+    <!--------main-css---------->
+    <link rel="stylesheet" href="assests/css/common/main/main.css">
+
+    <!--------owl---------->
+    <link rel="stylesheet" href="assests/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assests/css/owl/owl.theme.default.min.css">
+
+    <!-------popup--------->
+    <link rel="stylesheet" href="assests/css/popup/magnific-popup.css">
+
+	<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+
+
+
+  <style>
+        /*.ow{*/
+            /*display: flex;*/
+        /*}*/
+        /*.ow div{*/
+            /*height: 50%;*/
+        /*}*/
+
+
+        /*cardsystem5*/
+        .cardsystem5{
+            /*background: red;*/
+            width: 100%;
+            /*height: 200px;*/
+            /*box-shadow: 1px 1px 32px 0.5px black;*/
+            padding: 2px;
+            margin-top: 2px;
+            overflow-y: hidden;
+        }
+
+        .cardsystem5-rack{
+            /*background: #007bff;*/
+            width: 100%;
+            height: 250px;
+
+            position: relative;
+
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .cardsystem5-hr{
+            width: 50%;
+            border: 1px solid white;
+            transition: 300ms;
+        }
+
+        .cardsystem5-rack-inner{
+            position: absolute;
+            color: black;
+            margin: auto;
+
+            left: 0;
+
+            right: 0;
+
+            top: 30%;
+
+            bottom: 0;
+
+            transition: 300ms;
+        }
+
+        #cardsystem5-id-1{
+            /*background: url("assests/images/bg1/section1-home.jpg");*/
+            background-size: cover;
+        }
+
+        #cardsystem5-id-2{
+            /*background: url("assests/images/bg1/singapore_fountain_skyscrapers_115316_3840x2160.jpg");*/
+            background-size: cover;
+        }
+
+        #cardsystem5-id-3{
+            /*background: url("assests/images/bg1/section1-home.jpg");*/
+            background-size: cover;
+        }
+
+        #cardsystem5-id-4{
+            /*background: url("assests/images/bg1/section1-home.jpg");*/
+            background-size: cover;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-hr{
+            width: 10%;
+            transition: 300ms;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-rack-inner{
+            top: -50%;
+            transition: 300ms;
+        }
+
+        .cardsystem5-arrow-holder{
+            color: white;
+            font-size: 35px;
+            position: absolute;
+            margin: auto;
+
+            left: 0;
+
+            right: 0;
+
+            top: 180%;
+
+            bottom: 0;
+
+            transition: 300ms;
+        }
+
+        .cardsystem5-arrow-holder button{
+            background: #2196f3;
+            border: 1px solid black;
+            color: white;
+            width: 50%;
+            font-size: 20px;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin-top: 8%;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-arrow-holder{
+            top: 10%;
+            transition: 300ms;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-overlayer{
+            /*background: #007bff;*/
+            transition: 2s;
+        }
+
+        .cardsystem5-overlayer{
+            /*background: rgba(0,0,0,0.5);*/
+            width: 100%;
+            height: 100%;
+            transition: 2s;
+        }
+
+
+/*======================================*/
+        .clear { clear: both; }
+
+        .stage {
+
+            background-color: #000000;
+
+            float: left;
+
+            height: 330px;
+
+            overflow: hidden;
+
+            width: 100%;
+
+            max-width: 800px;
+
+            z-index: 10;
+
+            position: relative;
+
+            -webkit-backface-visibility: hidden;
+
+        }
+
+        .cbImage {
+
+            width: 200px;
+
+            height: 268px;
+
+            float: left;
+
+            margin: 25px 0px 25px 0px;
+
+            color: white;
+
+            box-shadow: 0px 5px 10px 0px #D6D6D6;
+
+            position: absolute;
+
+            -webkit-transform-style: preserve-3d;
+
+            transform-style: preserve-3d;
+
+        }
+
+
+
+        .cbImage img {
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+
+
+
+        .inactiveLeft {
+
+            -webkit-transform: perspective(500px) rotateY(60deg);
+
+            -O-transform: perspective(500px) rotateY(60deg);
+
+            transform: perspective(500px) rotateY(60deg);
+
+            -webkit-transition: all .5s ease-out;
+
+            -O-transition: all .5s ease-out;
+
+            transition: all .5s ease-out;
+
+            box-shadow: 12px 0px 20px 0px #d6d6d6;
+
+        }
+
+
+
+        .inactiveRight {
+
+            -webkit-transform: perspective(500px) rotateY(-60deg);
+
+            -O-transform: perspective(500px) rotateY(-60deg);
+
+            transform: perspective(500px) rotateY(-60deg);
+
+            -webkit-transition: all .5s ease-out;
+
+            -O-transition: all .5s ease-out;
+
+            transition: all .5s ease-out;
+
+            box-shadow: -12px 0px 20px 0px #d6d6d6;
+
+        }
+
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <!--
+     +--------------------------------------+
+     +                                      +
+     +             pre-loader               +
+     +                                      +
+     +--------------------------------------+
+-->
+
+<div class="preloader">
+    <!--<div id="businesslogo"><img src="assests/img/logo/uimountainlogo.png" alt="" width="180px"></div>-->
+    <div class="status"></div>
+</div>
+
+
+
+  <!--
+       +--------------------------------------+
+       +                                      +
+       +               header                 +
+       +                                      +
+       +--------------------------------------+
+  -->
+
+
+  <header>
+    <nav id="nav1" class="nav-bar fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-2">
+                <img src="assests/images/logo/logo.png" id="navimg" width=35% style="margin-top: 3px;">
+                </div>
+                <div class="col-12 col-md-12 col-lg-10">
+                    <div class="row">
+                        <!-- <div class="col-12 col-md-12 col-sm-12 text-right">
+                            <h6 style="display: inline-block"><i class="fi-xwlrxl-phone-wide"></i>+(94) 382 248354</h6><br>
+                        </div> -->
+                        <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                            <ol id="nav1-ol" style="margin-left: 650px;margin-top: 20px;">
+                                <a href="#section1" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Home</li></a>
+                            
+                                <a href="#intro" style="text-decoration: inherit; color: inherit;"><li>Introduction</li></a>
+
+                                <a href="#section3" style="text-decoration: inherit; color: inherit;"><li>Domain</li></a>
+
+                                <a href="#section110" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Milestones</li></a>
+
+                                <a href="#section10" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>conatct Us</li></a>
+
+                                <a href="#section120" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Documents</li></a>
+
+                                <a href="#section81" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Technologies</li></a>
+
+                                <a href="#sectionArch" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Achivements</li></a>
+
+                                <a href="#section4" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Team</li></a>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="nav2" class="collapse navbar-collapse navbar-ex1-collapse" style="position: fixed; z-index: 999;">
+    <div class="pos-f-t" style="overflow-y: auto;">
+        <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4 text-left">
+            <img src="assests/images/logo/logo.png" width="30%">
+            <ol class="font-ubuntu" style="list-style: none;height: 50vh; padding: 0; overflow-y: auto" id="nav2-main-mobi">
+              <li> <a href="#section1" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Home</a></li>
+              <li><a href="#intro" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Introduction</a></li>
+              <li><a href="#section3" style="text-decoration: inherit; color: inherit;">Domain</a></li>
+              <li><a href="#section110" style="text-decoration: inherit; color: inherit;">Milestones</a></li>
+              <li><a href="#section10" style="text-decoration: inherit; color: inherit;">Contact Us</a></li>
+              <li><a href="#section120" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Documents</a></li>
+              <li><a href="#section81" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Technologies</a></li>
+              <li><a href="#sectionArch" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Achivements</a></li>
+              <li><a href="#section4" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Team</a></li>
+            </ol>
+        </div>
+        </div>
+        <nav class="navbar navbar-dark" style=" background: rgba(0,0,0,0.7); margin-left:300px;" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #007bff;">
+            <i class="fi-xnsuxl-three-bars-solid"></i>
+        </button>
+ 
+
+        </nav>
+    </div>
+    </nav>
+
+
+
+  </header>
+
+  <!--
+       +--------------------------------------+
+       +                                      +
+       +                main                  +
+       +                                      +
+       +--------------------------------------+
+  -->
+
+      <main>
+
+        <!-- Home section start -->
+        <section id="section1">
+            <div id="carouselExampleInterval" class="carousel slide section1-top-slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000"  id="section1-home-bg-img1">
+                    </div>
+                    <!-- Comment the slider other images -->
+                    <!-- <div class="carousel-item" data-interval="2000" id="section1-home-bg-img2">
+                    </div>
+                    <div class="carousel-item"   id="section1-home-bg-img3">
+                    </div> -->
+
+                    <!-- <div class="container font-piorat" id="c">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h1 id="hpme-title" class="animated zoomIn delay-1s"><strong>Explore Beauty of World</strong></h1>
+                                <button type="button" class="btn  buttonX font-ubuntu animated zoomIn delay-1s" style="color: white"><span>Explore</span></button>
+                                <h4><strong>with Zaara</strong></h4>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="" style="margin-top: 20px; margin-bottom: 70px; height: 10vh">
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center wow zoomIn">
+                        <h1 class="font-piorat">
+                            <strong>“NENASA”</strong> : A Mobile–Based Application for Enhance the
+                            Knowledge of Kindergarten Children
+                        </h1>
+                        <hr style="border: 2px solid #007bff; width: 2%">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home section end -->
+
+        <!-- domain -->
+        <section id="section3" class="secdivider" style="padding-bottom: 5%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-8 text-left wow slideInLeft">
+                        <h4 class="font-piorat">NENASA</h4>
+                        <h1 class="font-piorat">What is <strong>NENASA</strong></h1>
+                        <p>
+                            Main objective of NENASA : To explore and identify learning disabilities and way to improve learning skills among kindergarten children in Sri Lanka and notify parents and teachers about their skills development.
+                        </p>
+                        <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center wow zoomIn">
+                        <img src="assests/images/logo/logo.png" alt="" width="70%">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center wow zoomIn" style="margin-top:12vh;">
+                        <img src="assests/images/rice.jpg" alt="" width="70%">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-8 text-right wow slideInLeft">
+                        <h4 class="font-piorat">NENASA</h4>
+                        <h1 class="font-piorat"><strong>Background</strong></h1>
+                        <p>This proposal outlines the development of a mobile 
+                          application aimed at enhancing the learning capabilities
+                           of SriLankan kindergarteners. Through the improvement of 
+                          early writing and speaking skills, emotion recognition, and 
+                          personalized memory assessments, the application seeks to 
+                          identify and address learning gaps in young children. The 
+                          application's core focus includes four key components: refining 
+                          writing skills through guided practice, empowering parents to 
+                          identify and track their child's weaknesses and progress, 
+                          enabling accurate pronunciation practice and tracking, and 
+                          promoting emotional awareness by identifying and reflecting 
+                          emotions through music. Additionally, the app offers tailored 
+                          memory assessments via a mobile game, catering to individual 
+                          learning needs and fostering cognitive growth. Extensive 
+                          research, collaboration with educators, psychologists, and 
+                          parents, as well as usability testing, contribute to the app's 
+                          effectiveness and user-friendliness. By providing personalized 
+                          learning experiences, the mobile application has the potential to 
+                          significantly enhance educational outcomes for Sri Lankan 
+                          children, equipping them with essential skills in writing, 
+                          speaking, emotional intelligence, and memory retention.</p>
+                        <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-8 text-left wow slideInLeft">
+                        <h4 class="font-piorat">NENASA</h4>
+                        <h1 class="font-piorat"><strong>Research Gap</strong></h1>
+                        <p>The research encompasses multiple projects, each targeting specific gaps i
+                          n their respective fields. In the realm of early literacy development, the project utilizes
+                           ML and AI to create personalized Sinhala writing exercises for children, addressing the lack of individualized tools. 
+                           The objective is to enhance children's writing abilities while providing parents with feedback. The research seeks to fill gaps
+                            in low-resource languages, speech therapy tools, language learning with speech recognition, and speech recognition in mobile applications.
+                             Additionally, the research aims to close a gap by combining facial emotion recognition and music recommendation, offering a 
+                             personalized music experience based on user emotions. For cognitive training in young children, the research introduces 
+                             AI and machine learning to personalize experiences and provide detailed insights to parents, filling gaps in tailored cognitive
+                              training programs for kids.</p>
+                        <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center wow zoomIn" >
+                        <img src="assests/images/wheat.png" alt="" width="50%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- domain end -->
+
+        <!-- problem -->
+        <div id="about-02" style="padding-bottom: 5%;padding-top: 5%;">
+          <div class="row mb-5">
+            <div class="col-md-12 wow zoomIn text-center">
+                <h4 class="font-piorat">NENASA</h4>
+                <h1 class="font-piorat">Research <strong>Problems</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" >
+                <div class="about-item text-center" >
+                   <h2 class="font-piorat"><strong>Component 1</strong></h2>
+                    <p>The research project aims to address the lack of customized, adaptive writing practice tools for 
+                      Sinhala-speaking kids by utilizing ML and AI technologies to provide personalized feedback and assistance based on 
+                      age and proficiency levels. It seeks to bridge the gap in research related to teaching writing to children in the Sinhala 
+                      language and to facilitate parental involvement through a dashboard that offers detailed progress reports. Overall, the project
+                       addresses the need for tailored tools to enhance children's writing skills and academic success.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about-item text-center" >
+                  <h2 class="font-piorat"><strong>Component 2</strong></h2>
+                    <p>
+                      Recent research articles highlight the growing interest in 
+                      voice recognition technology's potential applications in language acquisition, healthcare, and communication
+                       systems. However, the existing research reveals gaps in this field. The primary issues include the lack of resources for low-resource 
+                       languages like Sinhala, the need to tailor speech recognition for interactive voice response (IVR) systems, and improving accuracy for 
+                       language learners. Addressing speech disorders in children and integrating voice recognition into expert systems also require further 
+                       investigation. The proposed system aims to enhance accuracy and efficiency in low-resource languages, optimize speech recognition for
+                        IVR and child speech disorder identification, and integrate it into expert systems using deep learning and natural language processing.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about-item text-center" >
+                  <h2 class="font-piorat"><strong>Component 3</strong></h2>
+                    <p>Current research lacks an integrated system combining facial emotion recognition and music recommendation based on detected emotions.
+                       Although emotion detection from facial expressions is well-established, the focus has primarily been on detection, neglecting how to use
+                        the identified emotions. On the other hand, music recommendation systems have not effectively incorporated emotions. The challenge lies
+                         in selecting suitable features, obtaining labeled datasets, and creating an intuitive real-time user interface. Overcoming these challenges
+                          can lead to a revolutionary system enhancing music listening based on emotions. </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="about-item text-center" >
+                <h2 class="font-piorat"><strong>Component 4</strong></h2>
+                  <p>The research project addresses the challenge of preschoolers 
+                    struggling with reading by developing a mobile app. This app uses machine learning algorithms
+                     to provide personalized memory assessments and support for young children's literacy development. 
+                     It aims to offer individualized approaches tailored to each child's cognitive needs, with age-appropriate learning activities. 
+                     A parental dashboard is included to involve parents in monitoring their child's progress and offering essential support, ultimately 
+                     preparing children for future academic and personal success.</p>
+              </div>
+          </div>
+
+        </div>
+
+        </div>
+        <!-- problem ends -->
+
+        <!-- objective -->
+        <div id="objectives" style="padding-bottom: 5%">
+          <div class="row mb-5">
+
+            <div class="col-md-12 wow zoomIn text-center">
+                <h4 class="font-piorat">NENASA</h4>
+                <h1 class="font-piorat">Research <strong>Objectives</strong></h1>
+            </div>
+        </div>
+                    <div class="row">
+
+                        <div class="col-md-3" >
+
+                            <div class="objective-item text-center" >
+                              <strong>Component 1</strong></h2><i class="" style="font-size: 50px;"></i>
+                                <p>To explore and identify a feasible system to improve writing skills of kindergarten children and providing opportunities for parents to recognize of their growth.</p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="objective-item text-center"  >
+                              <strong>Component 2</strong></h2><i class="" style="font-size: 50px;"></i>
+                                <p>To explore and identify a feasible  system to improve speaking skills and allow parents to track child's speaking progress.</p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="objective-item text-center" >
+                              <strong>Component 3</strong></h2><i class="" style="font-size: 50px;"></i>
+                                <p>To explore a feasible system to recognize children's facial expressions and adjust the background music and theme based on their present emotions.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                          <div class="objective-item text-center" >
+                            <strong>Component 4</strong></h2><i class="" style="font-size: 50px;"></i>
+                              <p>To develop a mobile game that uses machine learning algorithms to provide personalized memory checkups and improve performance in kindergarten-age children and allow parents to track their children's progress through the dashboard.</p>
+
+                          </div>
+
+                      </div>
+
+                    </div>
+
+        </div>
+        <!-- objective ends -->
+
+        <!-- Team section start -->
+        <section id="section4" class="secdivider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 wow slideInLeft">
+                        <h4 class="font-piorat">NENASA</h4>
+                        <h2 class="font-piorat">Team <strong> Members</strong></h2>
+                        <h2>Meet the Team</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture11.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rusiru Dharmakeerthi</h5>
+                                        <p class="card-title">Team Leader</p>
+                                        <a href="https://www.linkedin.com/in/rusiru-dharmakeerthi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=61552931533587&mibextid=LQQJ4d"><i class="fi-snsuxl-facebook"></i></a>
+                                        
+                                        
+                                        
+                                    </div>
+                                  
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture22.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Omal Basnayake</h5>
+                                        <p class="card-title">Member</p>
+                                        <a href="https://www.linkedin.com/in/omal-basnayake-b89b58200/?originalSubdomain=lk"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="https://web.facebook.com/profile.php?id=100006828646242&sk=about"><i class="fi-snsuxl-facebook"></i></a>
+                                        <a href="https://g.co/kgs/mmhrzC"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="https://github.com/omalbasnayake"><i class="fi-snsuxl-github-alt"></i></a>
+                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Piyumi Wickramasinghe</h5>
+                                        <p class="card-title">Member</p>
+                                        <a href="https://www.linkedin.com/in/piyumi-wickramasinghe-437290226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/piyumi.wickramasinghe.180?mibextid=LQQJ4d"><i class="fi-snsuxl-facebook"></i></a>
+                                        
+                                
+                                        
+                                    </div>
+                                  </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tharuka Sachintha</h5>
+                                        <p class="card-title">Member</p>
+                                        <a href="https://www.linkedin.com/in/tharukasachintha"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100008729296196&mibextid=ZbWKwL"><i class="fi-snsuxl-facebook"></i></a>
+                                        
+                                        
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+
+                                <!-- <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture11.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Salika Madushanka</h5>
+                                        <p class="card-title">Team Leader</p>
+                                    </div>
+
+                                  <a href="pages/p1.html"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white"><span>Explore</span></button></a>
+                                </div> -->
+
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Pictures1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mr.Uditha Dharmakeerthi</h5>
+                                        <p class="card-title">Supervisor</p>
+                                        <a href="https://www.linkedin.com/in/uditha-dharmakeerthi-84741b17/?originalSubdomain=lk"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="https://www.sliit.lk/faculty-of-computing/staff/uditha.d/#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="mailto: uditha.d@sliit.lk"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+
+                                   
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Pictures2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr.Anuradha Jayakody</h5>
+                                        <p class="card-title">Co-Supervisor</p>
+                                        <a href="https://www.linkedin.com/in/dr-anuradha-jayakody-19a42915/"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="https://www.sliit.lk/faculty-of-computing/staff/anuradha.j/"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="mailto: anuradha.j@sliit.lk"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+
+                                   
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <!-- <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Binuka Paranagama</h5>
+                                        <p class="card-title">Member</p>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+
+                                    <a href="pages/p4.html"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white"><span>Explore</span></button></a>
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team section end -->
+
+        <!-- Milestones -->
+        <section id="section110" class="secdivider">
+            <div class="col-md-12 wow zoomIn text-center">
+                <h2><strong>Milestones</strong></h2>
+              <div class="container">
+                  <div class="container bootdey">
+                      <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <!-- Timeline start -->
+                              <div class="timeline">
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    20th January<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Topic Evaluation form submission</h2>
+                                    <p>
+                                      Initial topic assessment document of the proposed research
+                                      was submitted for evaluation. The submitted document
+                                      included a brief overview on key aspects of the proposed
+                                      research along with the research problem, research
+                                      objectives, overall solution as well as member task
+                                      breakdown.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light">No marks allocated</span>
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    30th January<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Project charter submission</h2>
+                                    <p>
+                                      Once the topic was finalized, the project charter document
+                                      was submitted for evaluation. This document also included
+                                      a brief overview on key aspects of the proposed research
+                                      along with the research problem, research objectives,
+                                      overall solution as well as member task breakdown of the
+                                      proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light">No marks allocated</span>
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    27th March<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Project proposal presentation</h2>
+                                    <p>
+                                      Presented to a panel of judges in order to provide an
+                                      overview of the proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 6%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    5th May<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Project proposal report</h2>
+                                    <p>
+                                      The submission of a report which provides an in-depth
+                                      analysis pertaining to key aspects of the proposed
+                                      research along with the research problem, objectives, as
+                                      well as the overall proposed solution.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 6%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">22nd May<small>2023</small></div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Status document - I</h2>
+                                    <p>
+                                      The submission of a document that provides an overview of
+                                      key tasks conducted by members during the implementation
+                                      phase of the research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 1%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">22nd May<small>2023</small></div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Progress Presentation – I</h2>
+                                    <p>
+                                      Evaluation of 50% completion of the proposed solution by a
+                                      panel of judges.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 15%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">20th June <small>2023</small></div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Research Paper submission</h2>
+                                    <p>
+                                      Draft submission of the research paper submitted to the
+                                      supervisor for evaluation.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 10%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    27th November<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Final Report</h2>
+                                    <p>
+                                      Once the topic was finalized, the project charter document
+                                      was submitted for evaluation. This document also included
+                                      a brief overview on key aspects of the proposed research
+                                      along with the research problem, research objectives,
+                                      overall solution as well as member task breakdown of the
+                                      proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 18%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    04th September<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Progress Presentation - II</h2>
+                                    <p>
+                                      Once the topic was finalized, the project charter document
+                                      was submitted for evaluation. This document also included
+                                      a brief overview on key aspects of the proposed research
+                                      along with the research problem, research objectives,
+                                      overall solution as well as member task breakdown of the
+                                      proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 18%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    06th November<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                
+                                    <h2>Website Assessment</h2>
+                                    <p>
+                                      Initial topic assessment document of the proposed research
+                                      was submitted for evaluation. The submitted document
+                                      included a brief overview on key aspects of the proposed
+                                      research along with the research problem, research
+                                      objectives, overall solution as well as member task
+                                      breakdown.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 2%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    04th September<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>
+                                      Project Status document - II
+                                      <br />
+                                      Logbook
+                                      <br />
+                                      Research paper registration notification
+                                    </h2>
+                                    <p>
+                                      Submission of research website and the research logbook
+                                      and status document 2 which provides an overview of all
+                                      key tasks conducted by members during the implementation
+                                      phase of the research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 3%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    01st November<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                
+                                    <h2>Final Presentation and Viva</h2>
+                                    <p>Final evaluation of the completed product.</p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 20%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Timeline end -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+        </section>
+        <!-- Milestones end -->
+
+        <section id="section120" class="secdivider" style="background:linear-gradient(to bottom right, rgb(33, 31, 31), silver);">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 wow zoomIn text-center">
+                    <h2 class="font-piorat">Documents</h2>
+         
+                    <div class="container">
+                      <div class="row">
+                       
+                        <div class="col-md-12 wow zoomIn text-center">
+                          <div class="p-3 mb-2 text-white" style="background: linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                            <h2><strong>Project Registration Documents</strong></h2>
+                          </div>
+                          <br/>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                            <div class="card text-center" style="width: 100%;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Topic Assessment</h5>
+                                </div> 
+                                <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                <a download="" href="https://drive.google.com/file/d/1a-n9fmFXiLyA2mjaD3yldcDnnRXPjv6v/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;"><span>Download</span></button></a>
+                            
+                            </div>
+                          </div>       
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                            <div class="card text-center" style="width: 100%;">
+                              <div class="card-body">
+                                <h5 class="card-title">Project Charter</h5>
+                              </div> 
+                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                              <a href="https://drive.google.com/file/d/1x_YSoAVu2XtgvKzAfHWlb5djD4cPFvUa/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;"><span>Download</span></button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    <div class="p-3 mb-2 text-white" style="background:linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                      <h2><strong>Project Proposal</strong></h2>
+                    </div>
+             
+                </div>
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                          <div class="card-body">
+                            <h5 class="card-title">Proposal Presentation</h5>
+                          </div> 
+                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                          <a download="" href="https://docs.google.com/presentation/d/1v4K3OBp5dC2x9W5-OugLLbreVPr2PbO0/edit?usp=sharing&ouid=111043374656997478878&rtpof=true&sd=true"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - Team</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href=""><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                      </div>
+                    </div>       
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20217822</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1c0AcIcPwWLVQ6b02ZQAy4QneerRAoawn/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20178390</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1VhldWgiUoslN3Q4Nm-CEjcgyzwvUF_KQ/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20410568</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1UgwccXutHgDC7abYG05pa96OyUk0Q43I/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20178918</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1XI_-Cdoqs0Rn65M5ipnkzl94u7bGI0Op/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 wow zoomIn text-center">
+                  <div class="p-3 mb-2 text-white" style="background:linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                    <h2><strong>Status Document 01</strong></h2>
+                  </div>
+              </div>
+                  <div class="container">
+                      <div class="row">
+  
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                              <div class="card text-center" style="width: 100%;">
+                                <div class="card-body">
+                                  <h5 class="card-title">IT20217822</h5>
+                              </div> 
+                                <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                  
+  
+                                <a download="" href="https://drive.google.com/file/d/1XvQy61aKRQwZ-VVz0v8269yZEbnOO4tL/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                              </div>
+  
+                          </div>
+  
+                     
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                            <div class="card text-center" style="width: 100%;">
+                              <div class="card-body">
+                                <h5 class="card-title">IT20178390</h5>
+                            </div> 
+                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                
+  
+                              <a href="https://drive.google.com/file/d/1XvQy61aKRQwZ-VVz0v8269yZEbnOO4tL/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                            </div>
+  
+                        </div>
+                          
+                        <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                          <div class="card text-center" style="width: 100%;">
+                            <div class="card-body">
+                              <h5 class="card-title">IT20410568</h5>
+                          </div> 
+                            <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                              
+  
+                            <a href="https://drive.google.com/file/d/1UuB_oVN9rOtUZ8E0sXb7C8zNdAbEupCr/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                          </div>
+  
+                      </div>
+                      
+                      <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                        <div class="card text-center" style="width: 100%;">
+                          <div class="card-body">
+                            <h5 class="card-title">IT20178918</h5>
+                        </div> 
+                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                            
+  
+                          <a href="https://drive.google.com/file/d/1Gp5AHcMmYL7Woxa0Rw3JteuU9_PrVXDw/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                        </div>
+  
+                    </div>
+                      </div>
+                  </div>
+                      </div>
+                  
+                  </div>
+  
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 wow zoomIn text-center">
+                        <div class="p-3 mb-2 text-white" style="background: linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                          <h2><strong>Progress Presentation 01</strong></h2>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+      
+                                <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+      
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Presentation</h5>
+                                    </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                        
+      
+                                      <a download="" href="https://docs.google.com/presentation/d/1CyvNL3OutbKtnrMneQaoQeNj84Htq5TR/edit?usp=sharing&ouid=111043374656997478878&rtpof=true&sd=true"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+      
+                                </div>
+      
+                            </div>
+                        </div>
+                            </div>
+                        
+                        </div>
+  
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12 wow zoomIn text-center">
+                              <div class="p-3 mb-2 text-white" style="background: linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                                <h2><strong>Research Paper</strong></h2>
+                                
+                              </div>
+                          </div>
+                              <div class="container">
+                                  <div class="row">
+            
+                                      <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+            
+                                          <div class="card text-center" style="width: 100%;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Research Paper</h5>
+                                          </div> 
+                                            <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                              
+            
+                                            <a download="" href="https://drive.google.com/file/d/16uogAmSUjKEDR1Q_syAnYfcj8127qddl/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                          </div>
+            
+                                      </div>
+                                  </div>
+                              </div>
+                                  </div>
+                              
+                              </div>
+  
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-12 wow zoomIn text-center">
+                                    
+                                    <div class="p-3 mb-2 text-white" style="background: linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                                      <h2><strong>Progress Presentation 02</strong></h2>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                      <div class="card text-center" style="width: 100%;">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Presentation</h5>
+                                          </div> 
+                                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                          <a download="" href="https://docs.google.com/presentation/d/1BoCCb-vqgawkd83ofakbSiYGZtg5tKyw/edit?usp=sharing&ouid=111043374656997478878&rtpof=true&sd=true"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                      <div class="card text-center" style="width: 100%;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Poster</h5>
+                                        </div> 
+                                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                        <a href="https://drive.google.com/file/d/1dgOW5Ee7vLsWg-9WNwAontR3Mxvx3Hor/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                              </div>
+                            </div>
+  
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-12 wow zoomIn text-center">
+                                 
+                                  <div class="p-3 mb-2 text-white" style="background: linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                                    <h2><strong>Final Reports</strong></h2>
+                                  </div>
+                              </div>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Report - Team</h5>
+                                        </div> 
+                                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                        <a download="" href=""><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20217822</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href=""><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>       
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20178390</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href=""><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20410568</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href=""><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20178918</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href=""><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Presentation</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href="https://docs.google.com/presentation/d/1U8zdeOUYDwTzXKnlq5H7uH7BXdsVcH86/edit?usp=sharing&ouid=111043374656997478878&rtpof=true&sd=true"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                
+                            </div>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-12 wow zoomIn text-center">
+                                  <div class="p-3 mb-2 text-white" style="background: linear-gradient(to bottom right, blue, rgb(0, 157, 241));" role="alert">
+                                    <h2><strong>Status Document 02</strong></h2>
+                                  </div>
+                              </div>
+                                  <div class="container">
+                                      <div class="row">
+                  
+                                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                              <div class="card text-center" style="width: 100%;">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">IT20217822</h5>
+                                              </div> 
+                                                <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                                  
+                  
+                                                <a download="" href="https://drive.google.com/file/d/1DZFJc1tKSb8sGoYdzkAdQRAV8fKDTOSx/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;; "><span>Download</span></button></a>
+                                              </div>
+                  
+                                          </div>
+                  
+                                     
+                                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                            <div class="card text-center" style="width: 100%;">
+                                              <div class="card-body">
+                                                <h5 class="card-title">IT20178390</h5>
+                                            </div> 
+                                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                                
+                  
+                                              <a href="https://drive.google.com/file/d/1LQ32oXjitEta1yabmzerxY1C2SVbCJ8D/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                            </div>
+                  
+                                        </div>
+                                          
+                                        <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                          <div class="card text-center" style="width: 100%;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">IT20410568</h5>
+                                          </div> 
+                                            <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                              
+                  
+                                            <a href="https://drive.google.com/file/d/1liJrjBNE6qUtP_qldLCtU0E_vuQDtM4x/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                          </div>
+                  
+                                      </div>
+                                      
+                                      <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                        <div class="card text-center" style="width: 100%;">
+                                          <div class="card-body">
+                                            <h5 class="card-title">IT20178918</h5>
+                                        </div> 
+                                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                            
+                  
+                                          <a href="https://drive.google.com/file/d/1wgXiSzgV7rBhTNzU8ctd2MhKoQqugA47/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #0312e1;;"><span>Download</span></button></a>
+                                        </div>
+                  
+                                    </div>
+                                      </div>
+                                  </div>
+                                      </div>
+                                  
+                                  </div>
+  
+                          </div>
+                          </div>
+  
+                          </div>
+                      </div>
+                    </div>
+  
+  
+                </div>
+              </div>
+          </div>
+        </section>
+  
+        <section id="section81" class="secdivider" >
+            <div class="content-box-md">
+                <div class="container" style="margin-bottom: 2%">
+                    <div class="row mb-5">
+
+                        <div class="col-md-12 wow zoomIn text-center">
+                            <h4 class="font-piorat">NENASA</h4>
+                            <h1 class="font-piorat">Tools & <strong>Technologies</strong></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t11.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t22.png" alt="" width=200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t3.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t44.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t5.png" alt="" width="150px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t6.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center mt-3">
+                            <img src="assests/images/tools/t77.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center mt-3">
+                            <img src="assests/images/tools/t8.png" alt="" width="200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- achivements -->
+        <section id="sectionArch" class="secdivider" style="background: #f4f4f4; padding-bottom: 5%;padding-top: 5%;" >
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4 text-left wow slideInLeft">
+                      <h4 class="font-piorat">NENASA</h4>
+                      <h1 class="font-piorat"><strong>Archivemets</strong></h1>
+                      <p>2023 5th International Conference on Advancements in Computing (ICAC)</p>
+                      <p>Manuscript Title : “NENASA”: A Mobile–Based Application for Enhance the Knowledge of Kindergarten Children <br/>
+                        Digital Library URI : <a href="In Progress">In Progress</a> <br/>
+                        DOI Number : In Progress</p>
+                      <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-8 text-center wow zoomIn">
+                      <img src="assests/images/RP.jpg" alt="" width="100%">
+                  </div>
+              </div>
+              <br/>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-right">
+                    <img src="assests/images/arch/IJCA.jpg" alt="" width="300px;">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-right">
+                    <img src="assests/images/arch/RG2.jpg" alt="" width=230px;>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- achivements end -->
+
+        <!-- conatct -->
+        <section id="section10" class="secdivider">
+        <div class="container contact-form wow zoomIn">
+          <form action="https://formsubmit.co/omalbasnayake@gmail.com" method="POST">
+              <h3>Drop Us a Message</h3>
+              <input type="hidden" name="_subject" value="Contact info from NENASA!">
+              <input type="hidden" name="_next" value="https://">
+             <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" required/>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" name="email" class="form-control" placeholder="Your Email *" value="" required />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" name="c" class="form-control" placeholder="Your Phone Number *" value="" required/>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <textarea name="d" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                      </div>
+                  </div>
+                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                     <div class="form-group">
+                        <button class="btnContact" type="submit">Send</button>
+                     </div>
+                 </div>
+              </div>
+          </form>
+        </div>
+        </section>
+        <!-- conatct end -->
+
+    </main>
+
+<!--
+     +--------------------------------------+
+     +                                      +
+     +               footer                 +
+     +                                      +
+     +--------------------------------------+
+-->
+
+    <footer>
+      <div class="container" style="color: white">
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <h3 class="font-piorat">Quick Links</h3>
+                  <ol style="list-style: none; padding: 0">
+                      <li><a href="#section1" style="text-decoration: inherit; color: inherit">Home</a></li>
+                      <li><a href="#section3" style="text-decoration: inherit; color: inherit">Domain</a></li>
+                      <li><a href="#section4" style="text-decoration: inherit; color: inherit">Team</a></li>
+                      <li><a href="#section110" style="text-decoration: inherit; color: inherit">Milestones</a></li>
+                      <li><a href="#section81" style="text-decoration: inherit; color: inherit">Technologies</a></li>
+                      <li><a href="#section120" style="text-decoration: inherit; color: inherit">Documents</a></li>
+                  </ol>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <h3 class="font-piorat">Contact Details</h3>
+                  <p>SLIIT Malabe Campus, New Kandy Rd, Malabe 10115
+                  <br/>
+                      <a href="mailto: rusirusandeep76@gmail.com" style="text-decoration: none; color: white">Rusiru Dharmakeerthi</a> 
+                      <br>
+                        <a href="mailto: omalbasnayake@gmail.com" style="text-decoration: none; color: white">Omal Basnayake</a> 
+                      <br>
+                        <a href="mailto: piyumiwickramasinghe402@gmail.com" style="text-decoration: none; color: white">Piyumi Wickramasinghe</a> 
+                      <br>
+                        <a href="mailto: tharuka.sachintha.prathibhan@gmail.com" style="text-decoration: none; color: white">Tharuka Sachintha</a> 
+                  </p>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <img src="assests/images/logo/logo.png" alt="" width="50%">
+              </div>
+            </div>
+              <div class="row footer-end1">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h6>Copyright 2023 © NENASA. All Rights Reserved.</h6>
+                </div>
+              </div>
+              <div class="row footer-end2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h6>Concept designed and developed by &nbsp <br> 23-012 </h6>
+                </div>
+              </div>
+        </div>
+        <!- Back to top ->
+          <a href="#section1" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fi-snsuxl-arrow-simple"></i>
+          </a>
+
+
+
+    </footer>
+
+<!--
+     +--------------------------------------+
+     +                                      +
+     +                 js                   +
+     +                                      +
+     +--------------------------------------+-->
+<!--------jquary--------->
+     <script src="assests/js/jquary/jquery-3.4.1.min.js"></script>
+
+<!------bootstrap-------->
+     <script src="assests/js/bootstrap/bootstrap.min.js"></script>
+
+<!---------wow----------->
+     <script src="assests/js/wowjs/wow.min.js"></script>
+
+<!--------owl---------->
+    <script src="assests/js/owl/owl.carousel.min.js"></script>
+
+<!--------owl---------->
+    <script src="assests/js/popup/jquery.magnific-popup.min.js"></script>
+
+<!--------font-awesome---------->
+    <!--<script src="assests/css/fontawesome-free-5.10.2-web/js/all.min.js"></script>-->
+<!--<script src="https://kit.fontawesome.com/a510959f49.js" crossorigin="anonymous"></script>-->
+<!--------main.js---------->
+    <script src="assests/js/common/main/main.js"></script>
+
+<!--------tour.js---------->
+    <script src="assests/js/common/tour/tour.js"></script>
+
+<!--------common.js---------->
+    <script src="assests/js/common/common.js"></script>
+
+<!--------friconix.js---------->
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+
+</body>
+</html>
