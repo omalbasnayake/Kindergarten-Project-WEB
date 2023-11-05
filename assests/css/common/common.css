@@ -1,0 +1,349 @@
+/*+--------------------------------------+*/
+/*+                                      +*/
+/*+               common                 +*/
+/*+                                      +*/
+/*+--------------------------------------+*/
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#nav11 {
+  box-shadow: 0px 8px 6px -10px #999;
+}
+
+.preloader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  overflow-x: hidden;
+}
+
+.status {
+  background-image: url('../../images/pre-loader/Ripple-1s-251px.gif');
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*-----------------------------------------------font-----------------------------------------------------------------*/
+
+.font-piorat {
+  font-family: 'Forum', cursive;
+  font-family: 'Poiret One', cursive;
+}
+.font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*---this part use to set top margin for each section(via this developer hope to seperate each section perfectly)-----*/
+
+.secdivider {
+  margin-top: 10%;
+}
+
+.buttonX {
+  background: #2196f3;
+}
+
+/*-------------------------------------------navgation----------------------------------------------------------------*/
+
+#nav1 {
+  /*background: linear-gradient(to left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 75%,white 100%);
+    */
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 75%,
+    #4a4848 100%
+  );
+
+  color: white;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 98;
+  /*display: none;*/
+}
+
+#nav1-ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+#nav1-ol li {
+  padding: 15px;
+}
+
+/*-----------------------------------------------tour-sec1------------------------------------------------------------*/
+#top-img3 {
+  background: url('../../../assests/images/home.jpg');
+}
+
+.dropdown-nav-menu {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 20%;
+  display: none;
+  transition: 2s;
+  margin-top: 1%;
+}
+
+.dropdown-nav-menu ol {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.dropdown-nav-menu ol li {
+  border-bottom: 2px solid white;
+  font-size: 13px;
+}
+
+.dropdown-title:hover .dropdown-nav-menu {
+  display: block;
+  transition: 2s;
+}
+
+.dropdown-nav-menu ol li:hover {
+  background: white;
+  color: #1d2124;
+  cursor: pointer;
+}
+
+.dropdown-title:hover .a-up {
+  display: inline-block;
+}
+
+.dropdown-title:hover .a-down {
+  display: none;
+}
+
+.a-up {
+  display: none;
+}
+/*===========================*/
+.dropdown-nav-menu2 {
+  background: #1d2124;
+  color: white;
+  position: absolute;
+  width: 100%;
+  display: none;
+  transition: 2s;
+  margin-top: -8%;
+  margin-left: 91%;
+}
+
+.dropdown-nav-menu2 ol {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.dropdown-nav-menu2 ol li {
+  border-bottom: 2px solid white;
+  font-size: 13px;
+}
+
+.dropdown-title2:hover .dropdown-nav-menu2 {
+  display: block;
+  transition: 2s;
+}
+
+.dropdown-nav-menu2 ol li:hover {
+  background: white;
+  color: #1d2124;
+  cursor: pointer;
+}
+
+.a2-right {
+  display: none;
+}
+
+.dropdown-title2:hover .a2-down {
+  display: none;
+}
+
+.dropdown-title2:hover .a2-right {
+  display: inline-block;
+}
+
+#nav2 {
+  background: #212121;
+  color: white;
+  top: 0;
+  z-index: 98;
+  display: none;
+  cursor: pointer;
+}
+
+.nav2-style-mobi {
+  list-style: none;
+}
+
+.nav2-style-mobi-2 {
+  list-style: none;
+}
+
+.nav2-style-mobi-2 > li {
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+
+.nav2-style-mobi > li {
+  background: #424242;
+  border-bottom: 1px solid white;
+  padding: 1%;
+  padding-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#nav2-main-mobi > li {
+  background: #424242;
+  border-bottom: 1px solid white;
+  padding: 1%;
+  padding-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#nav11 {
+  background: white;
+  width: 100%;
+  height: 12%;
+  position: fixed;
+  top: 0;
+  z-index: 98;
+  /*display: none;*/
+}
+#nav21 {
+  top: 0;
+  z-index: 98;
+  display: none;
+}
+
+#nav11 > ol {
+  list-style: none;
+  padding: 0px;
+
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  margin: auto;
+
+  display: flex;
+}
+
+#nav11 > ol > li > a {
+  text-decoration: inherit;
+  color: inherit;
+  padding-right: 18px;
+}
+
+#nav11 > img {
+  width: 120px;
+  margin-left: 40px;
+}
+
+/*---------------------this part use to remove gutters of cards(it use on main page gallery, etc)---------------------*/
+
+.no-gutters {
+  padding: 0;
+}
+
+/*-----------------------------this part use to increace margin-bottom of cards---------------------------------------*/
+
+.card-margin-down {
+  margin-bottom: 2%;
+}
+
+/*-------------------------------------this part manage css of footer-------------------------------------------------*/
+
+footer {
+  background: black;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-top: 2%;
+}
+
+/*----------------------------------------media quary of common.css---------------------------------------------------*/
+
+@media all and (max-width: 1171px) {
+  #nav1 {
+    display: none;
+  }
+  #nav2 {
+    display: block;
+  }
+
+  .sm-distroy {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #nav11 {
+    display: none;
+  }
+  #nav21 {
+    display: block;
+  }
+
+  .sm-distroy {
+    display: none;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .sm-distroy {
+    display: none;
+  }
+}
+
+.a-sec-1 {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  width: 100%;
+  height: 60vh;
+}
+
+.a-title {
+  color: white !important;
+  margin-top: 22% !important;
+}
+#nav1 a:link {
+  color: inherit;
+  text-decoration: none;
+}
+#nav1 > ol > li > a {
+  text-decoration: inherit;
+  color: white;
+  padding-right: 18px;
+}
+
+.col-12 {
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
+
+p {
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
